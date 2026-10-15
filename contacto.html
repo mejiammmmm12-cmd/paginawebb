@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Mi página web</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <script src="js/contacto.js" defer></script>
+</head>
+<body>
+
+    <div class="navegador">
+        <div class="circulos">
+            <span class="rojo"></span>
+            <span class="amarillo"></span>
+            <span class="verde"></span>
+        </div>
+        <div class="direccion">Contacto - Mi página web</div>
+    </div>
+
+    <header>
+        <div class="encabezado">
+            <h1>Contacto</h1>
+        </div>
+
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+
+    <main class="pagina-contacto">
+        <section class="seccion">
+            <h2>Información de contacto</h2>
+            <p>
+                ¡Gracias por visitar mi página web!
+                Si tienes alguna duda o comentario, puedes escribirnos.
+            </p>
+        </section>
+
+        <section class="seccion">
+            <h2>Enviar un mensaje</h2>
+
+            <form id="formularioContacto">
+                <label for="nombreContacto">Nombre:</label>
+                <input type="text" id="nombreContacto" name="nombre"
+                       placeholder="Escribe tu nombre" required>
+
+                <label for="correoContacto">Correo electrónico:</label>
+                <input type="email" id="correoContacto" name="correo"
+                       placeholder="Escribe tu correo" required>
+
+                <label for="comentarioContacto">Comentario:</label>
+                <textarea id="comentarioContacto" name="comentario"
+                          rows="5" placeholder="Escribe tu comentario"
+                          required></textarea>
+
+                <button type="submit" class="enviar">Enviar mensaje</button>
+                <p id="respuestaContacto" aria-live="polite"></p>
+            </form>
+        </section>
+
+        <a href="index.html" class="boton">Volver al inicio</a>
+    </main>
+
+    <footer>
+        <p>© 2026 Tu Nombre. Hecho con HTML, CSS y JavaScript.</p>
+    </footer>
+
+</body>
+</html>
